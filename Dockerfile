@@ -1,4 +1,4 @@
-FROM debian/bullseye-slim:latest
+FROM debian:bullseye-slim
 RUN apt update && \
     DEBIAN_FRONTEND=noninteractive apt-get -y upgrade && \
     apt install -y gnupg gnupg-agent && \
